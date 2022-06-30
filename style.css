@@ -1,0 +1,300 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --background-color: rgb(36, 36, 36);
+}
+
+.heading {
+    font-size: 60px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    color: black;
+    animation: vanish 2s ease 2s 1 forwards;
+}
+
+.para {
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+    animation: vanish 2s ease 2s 1 forwards;
+}
+
+#land-screen {
+    position: fixed ;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(rgb(130, 104, 208), rgb(144, 57, 144));
+    z-index: 2;
+    justify-content: center;
+    flex-direction: column;
+    animation: land 2s ease 2s 1 forwards;
+}
+
+@keyframes land {
+    0% {
+        height: 100vh;
+    }
+
+    100% {
+        opacity: 0;
+        height: 0vh;
+    }
+}
+
+@keyframes vanish {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+nav {
+    position: sticky;
+    top: 0px;
+    left: 0px;
+}
+
+.navbar {
+    list-style: none;
+    padding-left: 50px;
+    background-color: rgb(138, 63, 204);
+    z-index: 1;
+}
+
+.list {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.nav-link {
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 1.2em;
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.nav-list {
+    margin: 15px 20px;
+    padding: 2px;
+}
+
+.nav-link:hover {
+    background-color: white;
+}
+
+.hamburger {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    display: none;
+}
+
+.line {
+    width: 50px;
+    height: 5px;
+    background-color: black;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+#aboutMe {
+    height: 95vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color:rgb(159, 154, 177);
+}
+
+.about {
+    max-width: 40vw;
+}
+
+.smallHeading {
+    font-size: 4em;
+}
+
+.bigHeading {
+    font-size: 5em;
+
+}
+
+.aboutPara {
+    font-size: 1rem;
+}
+
+.btnSection {
+    display: flex;
+    align-items: center;
+}
+
+.btn {
+    width: 10em;
+    height: 3em;
+    margin: 2em 0.5em;
+    background-color: rgb(138, 63, 204);
+    border-radius: 5px;
+    color: white;
+    font-size: 1em;
+    /* font-weight: bold; */
+    cursor: pointer;
+    border: solid black;
+}
+
+.btn:hover {
+    background-color: white;
+    color: black;
+    border: solid rgb(138, 63, 204);
+}
+
+.myImage>img {
+    height: 400px;
+
+}
+
+/* Education section */
+
+#education {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.eduBlock {
+    width: 80vw;
+}
+
+.eduName {
+    margin-bottom: 2rem;
+}
+
+.institute {
+    margin: 20px 0;
+}
+
+.eduSpan {
+    color: grey;
+    font-size: medium;
+}
+#skill{
+    height: 100vh;
+    background-color: rgb(159, 154, 177);
+}
+#contact {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#form {
+    width: 80vw;
+}
+
+#form>h1 {
+    margin-bottom: 2rem;
+}
+
+.entry {
+    margin: 15px 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.entry>label {
+    font-size: 2em;
+}
+
+.entry>.input {
+    width: 30em;
+    margin: 5px;
+    height: 2em;
+    font-size: large;
+    border-radius: 5px;
+}
+
+#des {
+    border-radius: 5px;
+    width: 41em;
+}
+
+
+/* Responsive */
+@media screen and (max-width:960px) {
+    #aboutMe {
+        flex-direction: column;
+        flex-flow: column-reverse;
+        height: auto;
+    }
+
+    .about {
+        /* width: auto; */
+        max-width: 90vw;
+    }
+
+    .bigHeading {
+        font-size: 4em;
+    }
+
+    .smallHeading {
+        font-size: 3.5em;
+    }
+
+    .navbar {
+        height: 3em;
+        padding-left: 0px;
+    }
+    
+    .list {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 2em;
+    }
+
+    .entry>.input,
+    #des {
+        width: auto;
+    }
+
+    .myImage>img {
+        width: 20em;
+    }
+
+    .btn {
+        margin: 10px 5px;
+        width: 7em;
+    }
+
+    .hamburger {
+        display: inline;
+        cursor: pointer;
+    }
+
+    .navlistdis {
+        /* opacity: 0; */
+        display: flex;
+    }
+
+    .navbarht {
+        height: 395px;
+        border-bottom: 3px solid black;
+    }
+    .hamdis{
+        display: none;
+    }
+}

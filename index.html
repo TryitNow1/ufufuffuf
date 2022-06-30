@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href='style.css'>
+</head>
+
+<body>
+    <div id="land-screen">
+        <div class="heading">Welcome</div>
+        <div class="para">to Portfolio by Ravi Patel</div>
+    </div>
+    <nav>
+        <div class="navbar">
+        <ul class="list">
+            <li class="nav-list" id="About"><a href="#aboutMe" class="nav-link">About Me</a></li>
+            <li class="nav-list" id="Education"><a href="#education" class="nav-link">Education</a></li>
+            <li class="nav-list" id="Skill"><a href="#skill" class="nav-link">Skill</a></li>
+            <li class="nav-list" id="Projects"><a href="" class="nav-link">Projects</a></li>
+            <li class="nav-list" id="Contact"><a href="#contact" class="nav-link">Contact Me</a></li>
+        </ul>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>    
+        </div>
+    </div>
+    </nav>
+    <section id="aboutMe">
+        <div class="about">
+            <h2 class="smallHeading">I am</h2>
+            <h1 class="bigHeading">Ravi Patel</h1>
+            <p class="aboutPara">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia labore modi culpa optio
+                illo in
+                exercitationem
+                consequatur tenetur ut id, pariatur praesentium assumenda.</p>
+            <div class="btnSection">
+                <button class="btn">Download Resume</button>
+                <button class="btn">Projects</button>
+            </div>
+        </div>
+        <div class="myImage">
+            <img src="Blobimg.png" alt="My Image">
+        </div>
+    </section>
+    <section id="education">
+        <div class="eduBlock">
+            <h1 class="smallHeading eduName">Education</h1>
+            <div class="institute">
+                <h1 class="eduHeading">Shri Labhubhai Trivedi Institute of Engineering and Technology. </h1>
+                <span class="eduSpan">(2019-2023)</span>
+                <p class="educationpara">Pursuing Bachelor in Engineering under feild of Computer Science and
+                    Engineering.</p>
+            </div>
+            <div class="institute">
+                <h1 class="eduHeading">Goverment Senior Secondary School - 33D.</h1>
+                <span class="eduSpan">(2017-2019)</span>
+                <p class="educationpara">Completed my 12th Standard from GMSSS Chandigarh.</p>
+            </div>
+        </div>
+    </section>
+    <section id="skill">
+        <h1>Work in progress</h1>
+    </section>
+    <section id="contact">
+        <div id="form">
+            <h1 class="smallHeading">Contact Me</h1>
+            <form action="" method="post">
+                <div class="entry">
+                    <label for="name">Enter your Email:</label>
+                    <input type="email" name="email" placeholder="eg:ravi@mail.in" class="input">
+                </div>
+                <div class="entry">
+                    <label for="name">Enter your Name:</label>
+                    <input type="text" name="name" placeholder="Ravi" class="input">
+                </div>
+                <div class="entry">
+                    <label for="connection">Enter your Suggestion:</label>
+                    <textarea name="description" id="des" cols="30" rows="10"></textarea>
+                </div>
+                <input type="submit" value="Send" class="btn">
+            </form>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
